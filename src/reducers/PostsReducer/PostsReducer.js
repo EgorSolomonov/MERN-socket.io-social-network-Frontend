@@ -97,7 +97,7 @@ export const createNewPostThunk = (userId, toUserId, text, image) => {
       data.append("file", image);
 
       const filePath = await getPostImgChangedPath(data);
-      const correctPath = `http://localhost:8080/${filePath.data}`;
+      const correctPath = `https://mern-socket-socialnetwork.herokuapp.com/${filePath.data}`;
 
       await createNewPost(userId, toUserId, text, correctPath);
       dispatch(getAllProfilePostsThunk(userId));
@@ -107,7 +107,7 @@ export const createNewPostThunk = (userId, toUserId, text, image) => {
       data.append("file", image);
 
       const filePath = await getPostImgChangedPath(data);
-      const correctPath = `http://localhost:8080/${filePath.data}`;
+      const correctPath = `https://mern-socket-socialnetwork.herokuapp.com/${filePath.data}`;
 
       await createNewPost(userId, toUserId, text, correctPath);
       dispatch(getAllProfilePostsThunk(toUserId));
