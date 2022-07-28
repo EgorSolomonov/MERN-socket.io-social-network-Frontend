@@ -36,7 +36,7 @@ const MessageContainer = React.memo((props) => {
 
   useEffect(() => {
     // socket create
-    socket.current = io("ws://mern-socket-socialnetwork.herokuapp.com");
+    socket.current = io("ws://localhost:8080");
 
     // socket getMessageFunction
     socket.current?.on("getMessage", (data) => {
