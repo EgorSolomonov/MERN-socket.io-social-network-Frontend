@@ -99,8 +99,6 @@ export const createNewPostThunk = (userId, toUserId, text, image) => {
       const filePath = await getPostImgChangedPath(data);
       const correctPath = `https://mern-socket-socialnetwork.herokuapp.com/${filePath.data}`;
 
-      console.log(correctPath);
-
       await createNewPost(userId, toUserId, text, correctPath);
       dispatch(getAllProfilePostsThunk(userId));
       dispatch(setPostImageSrc(""));
