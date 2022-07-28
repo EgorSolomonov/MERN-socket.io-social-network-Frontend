@@ -1,0 +1,93 @@
+// .page_wrapper {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+
+//   button {
+//     padding: 7px 26px;
+//     background-color: #5181b8;
+//     cursor: pointer;
+//     border-radius: 4px;
+//     color: white;
+//     border: 0;
+//     margin: 0;
+//     font-size: 20px;
+//   }
+
+//   .page {
+//     width: 90%;
+
+//     .buttons {
+//       margin-top: 3%;
+
+//       button:nth-child(1n + 2) {
+//         margin-left: 10px;
+//       }
+//     }
+//     .year {
+//       .message {
+//         font-size: 20px;
+//       }
+
+//       .year_buttons {
+//         margin-top: 20px;
+//         display: flex;
+//         justify-content: space-evenly;
+
+//         button {
+//           background-color: #cccccc;
+//           color: black;
+//           border: 1px solid grey;
+//         }
+//       }
+
+//       .photos {
+//         font-size: 18px;
+
+//         .photos_loaded {
+//           margin: 50px 20px;
+//           padding: 60px 20px 50px 20px;
+//           background-color: #cccccc;
+//           border-radius: 10px;
+//           border: 0.5px solid grey;
+//           display: flex;
+//           flex-direction: column;
+//           align-items: center;
+
+//           .photos_loaded_wrapper {
+//             width: 90%;
+//             display: flex;
+//             flex-wrap: wrap;
+
+//             .photo_example {
+//               display: flex;
+//               flex-direction: column;
+//               margin-left: 25px;
+
+//               img {
+//                 width: 150px;
+//                 height: 150px;
+//               }
+
+//               .likes {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: space-evenly;
+//                 margin-top: -15px;
+
+//                 h2 {
+//                   color: red;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   .wait_message {
+//     font-size: 20px;
+//     margin: 50px 0;
+//   }
+// }

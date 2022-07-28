@@ -1,0 +1,69 @@
+@import "../../../App.scss";
+
+.conversations_wrapper {
+  width: 100%;
+  box-sizing: border-box;
+
+  .conversation_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    max-height: calc(100vh - 128px);
+    overflow: auto;
+    box-sizing: border-box;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+
+    .user_logo {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding: 10px;
+      }
+    }
+    .unread_messages {
+      position: absolute;
+      right: 5px;
+
+      .blueCircle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgb(2, 0, 36) 6%,
+          rgb(29, 115, 115) 17%,
+          rgba(0, 215, 255, 0.8547794118) 72%
+        );
+      }
+    }
+    .delete_thisConversation {
+      margin-right: 10px;
+    }
+  }
+
+  .emptyConversation {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+
+  .selected {
+    background-color: rgb(92, 91, 91);
+  }
+
+  .conversation_items:hover {
+    background-color: rgb(163, 162, 162);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $top_bar;
+  }
+}

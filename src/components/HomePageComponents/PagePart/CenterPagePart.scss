@@ -1,0 +1,41 @@
+@import "../../../App.scss";
+
+.centerPagePart_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .creatingPostBar {
+    width: 95%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .posts {
+    width: 95%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .posts_wrapper {
+      width: 90%;
+      -webkit-box-shadow: 0px 0px 22px -4px $top_bar;
+      -moz-box-shadow: 0px 0px 22px -4px $top_bar;
+      box-shadow: 0px 0px 22px -4px $top_bar;
+      border-radius: 20px;
+      padding: 15px 30px;
+      margin-bottom: 30px;
+      background-color: $page_background;
+      position: relative;
+    }
+
+    #dark.posts_wrapper {
+      -webkit-box-shadow: 0px 0px 22px -4px $top_bar_dark;
+      -moz-box-shadow: 0px 0px 22px -4px $top_bar_dark;
+      box-shadow: 0px 0px 22px -4px $top_bar_dark;
+      background-color: $page_background_dark;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.friendsOnline_wrapper {
+  .friendsOnline {
+    h2 {
+      margin-top: 25px;
+      margin-bottom: 40px;
+    }
+
+    .friend_logo {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+
+      .onlineCircle {
+        position: relative;
+
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        .greenCircle {
+          position: absolute;
+          background-color: green;
+          border-radius: 50%;
+          width: 15px;
+          height: 15px;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      p {
+        margin-left: 15px;
+        font-weight: 900;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../App.scss";
+
+.homePage_wrapper {
+  .page_wrapper {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: $page_background;
+
+    .left_page {
+      flex: 3;
+      overflow-y: scroll;
+      min-width: 300px;
+      max-width: 300px;
+    }
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $top_bar;
+      border-radius: 20px;
+    }
+
+    ::-webkit-scrollbar-button {
+      background-color: $top_bar;
+      border-radius: 20px;
+    }
+
+    .home_scroll_wrapper {
+      display: flex;
+      overflow-y: scroll;
+      flex: 7;
+
+      .center_page {
+        flex: 6;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .home_right_page {
+        flex: 4;
+      }
+    }
+  }
+}
+
+.homePage_wrapper {
+  #dark.page_wrapper {
+    background-color: $page_background_dark;
+
+    ::-webkit-scrollbar-thumb {
+      background-color: $top_bar_dark;
+    }
+
+    ::-webkit-scrollbar-button {
+      background-color: $top_bar_dark;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "../../App.scss";
+
+.messagePage_wrapper {
+  background-color: $page_background;
+
+  .page_wrapper {
+    width: 100%;
+    height: calc(100vh - 58px);
+    display: flex;
+
+    .left_page {
+      flex: 2.5;
+      padding: 10px;
+      position: relative;
+
+      .search {
+        width: 90%;
+        color: $top_bar;
+
+        .MuiFormControl-root,
+        .MuiTextField-root,
+        .search_input,
+        .css-1u3bzj6-MuiFormControl-root-MuiTextField-root {
+          width: 100%;
+        }
+      }
+    }
+    .center_page {
+      flex: 4.5;
+
+      .center {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .right_page {
+      flex: 3;
+    }
+  }
+}
+
+#dark.messagePage_wrapper {
+  background-color: $page_background_dark;
+}

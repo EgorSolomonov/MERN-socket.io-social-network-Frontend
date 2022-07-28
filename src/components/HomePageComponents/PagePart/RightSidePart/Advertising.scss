@@ -1,0 +1,11 @@
+.advertising_wrapper {
+  .advertising {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: contain;
+    }
+  }
+}

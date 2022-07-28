@@ -1,0 +1,83 @@
+.searchList_messages {
+  position: absolute;
+  width: 100%;
+  max-width: 330px;
+  min-height: 92px;
+  max-height: 400px;
+  background-color: #fff;
+  top: 65px;
+  left: 7px;
+  border-radius: 5px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15px;
+  overflow-y: scroll;
+  opacity: 1;
+  transition: 1s all ease-out;
+
+  .bottomLine_messages {
+    width: 90%;
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+
+    .user_logo_search_messages {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding: 7px 0;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      p {
+        margin-left: 10px;
+        font-size: 16px;
+      }
+    }
+
+    .addButton {
+      button {
+        color: green;
+      }
+      button:disabled {
+        color: gray;
+      }
+    }
+
+    .added {
+      button {
+        color: green;
+      }
+      button:disabled {
+        color: gray;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.disactive {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}

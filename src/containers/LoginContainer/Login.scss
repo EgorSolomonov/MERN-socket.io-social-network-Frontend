@@ -1,0 +1,73 @@
+@import "../../App.scss";
+
+.login_wrapper {
+  background-color: $top_bar;
+
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+    .site_info {
+      width: 100%;
+      flex: 5;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: -50px;
+
+      h1 {
+        color: $page_background;
+        font-weight: 900;
+        font-size: 44px;
+      }
+
+      p {
+        margin-top: 20px;
+        font-size: 20px;
+      }
+    }
+    .log_form_wrapper {
+      display: flex;
+      flex-direction: column;
+      flex: 5;
+
+      .log_form {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $page_background;
+        padding: 20px;
+        border-radius: 20px;
+
+        input {
+          width: 350px;
+          background-color: white;
+        }
+        #signUp {
+          width: 250px;
+          margin-top: 15px;
+          color: $page_background;
+        }
+        #logIn {
+          width: 250px;
+          margin-top: 15px;
+          background-color: green;
+          color: $page_background;
+
+          svg {
+            
+          }
+        }
+      }
+
+      .MuiFormControl-root {
+        margin-top: 15px;
+      }
+    }
+  }
+}

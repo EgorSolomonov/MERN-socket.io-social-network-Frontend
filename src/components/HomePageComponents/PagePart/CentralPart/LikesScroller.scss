@@ -1,0 +1,62 @@
+.whoLiked_wrapper {
+  position: absolute;
+  min-width: 34px;
+  max-width: 78px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  bottom: 40px;
+  left: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s all ease;
+  opacity: 1;
+
+  .whoLiked {
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+
+    .likes_line {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      flex-wrap: nowrap;
+      min-width: 100%;
+      padding: 0 5px;
+
+      .user_logo_likes {
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 20px;
+        max-height: 20px;
+        padding: 2px;
+        flex: 0 0 auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+      height: 5px;
+    }
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+  }
+}
+
+.disactive2 {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  transition: 1s all ease;
+}

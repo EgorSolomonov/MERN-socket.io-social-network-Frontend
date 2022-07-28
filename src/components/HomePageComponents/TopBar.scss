@@ -1,0 +1,160 @@
+@import "../../App.scss";
+
+.topBar_wrapper {
+  width: 100%;
+  height: 60px;
+  background-color: $top_bar;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  .topBar {
+    width: 100%;
+    display: flex;
+    background-color: $top_bar;
+
+    .topBar_left {
+      flex: 3;
+      max-width: 300px;
+
+      span {
+        margin-left: 20px;
+        color: $page_background;
+        font-size: 34px;
+        font-weight: bold;
+      }
+    }
+
+    .topBar_center {
+      flex: 5;
+      position: relative;
+      display: flex;
+      align-items: center;
+
+      .search_icon {
+        position: absolute;
+        cursor: pointer;
+        left: 6px;
+        top: 11px;
+      }
+
+      input {
+        width: 90%;
+        border: 0.5px solid black;
+        border-radius: 25px;
+        padding: 7px 0;
+        text-indent: 50px;
+        font-size: 20px;
+        background-color: $page_background;
+      }
+    }
+
+    .topBar_right {
+      flex: 4;
+      display: flex;
+      align-items: center;
+
+      svg {
+        color: $page_background;
+        cursor: pointer;
+      }
+
+      .topBar_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .left_info {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          width: 40%;
+          font-size: 18px;
+          margin-left: -20px;
+
+          p {
+            cursor: pointer;
+            font-weight: 600;
+          }
+        }
+
+        .center_info {
+          width: 20%;
+          display: flex;
+          justify-content: space-evenly;
+
+          .messages {
+            position: relative;
+
+            .unread_messages {
+              position: absolute;
+              top: -9px;
+              right: -4px;
+              color: white;
+              font-weight: 900;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .right_info {
+          width: 30%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 20px;
+
+          img {
+            min-width: 40px;
+            min-height: 40px;
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            cursor: pointer;
+            border: 3px solid $page_background;
+          }
+        }
+      }
+    }
+  }
+}
+
+#dark.topBar_wrapper {
+  background-color: $top_bar_dark;
+
+  .topBar {
+    background-color: $top_bar_dark;
+
+    h1 {
+      color: $page_background_dark;
+    }
+  }
+
+  .topBar_center {
+    input {
+      border: 0.5px solid white;
+      background-color: $page_background_dark;
+    }
+  }
+  .topBar_right {
+    svg {
+      color: $page_background_dark;
+    }
+
+    .topBar_info {
+      .left_info {
+        p {
+          color: white;
+        }
+      }
+      .right_info {
+        img {
+          border: 3px solid $page_background_dark;
+        }
+      }
+    }
+  }
+}

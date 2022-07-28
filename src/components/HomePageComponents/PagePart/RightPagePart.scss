@@ -1,0 +1,21 @@
+.rightPagePart_wrapper {
+  width: 100%;
+
+  .rightPagePart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .friendsNotification {
+      flex: 2;
+    }
+
+    .advertising {
+      flex: 3;
+    }
+
+    .onlineFriends {
+      flex: 5;
+    }
+  }
+}

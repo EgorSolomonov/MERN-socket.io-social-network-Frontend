@@ -1,0 +1,56 @@
+@import "../../../../App.scss";
+
+.navigationMenuBar_wrapper {
+  .navigationMenuBar {
+    border-bottom: 1px solid #000;
+    margin: 30px 30px 0 15px;
+    height: 510px;
+    overflow: hidden;
+    transition: 1s all ease;
+
+    .navLink {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 15px 0 15px 0;
+
+      p {
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      svg {
+        color: $top_bar;
+        cursor: pointer;
+      }
+
+      #dark & svg {
+        color: $top_bar_dark;
+      }
+    }
+
+    .show_more_button {
+      margin-top: 4%;
+      padding: 15px 0 30px 0;
+      display: flex;
+
+      button {
+        color: black;
+        font-weight: bold;
+      }
+    }
+
+    .close_menu_button {
+      margin-top: 4%;
+      padding: 15px 0 30px 0;
+      display: flex;
+
+      button {
+        color: black;
+        font-weight: bold;
+      }
+    }
+  }
+}
