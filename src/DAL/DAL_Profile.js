@@ -54,39 +54,58 @@ export const getChangedImagePath = (file) => {
 };
 
 export const updateUserImage = (userId, filePath) => {
-  return axios.put(`http://localhost:8080/api/users/${userId}`, {
-    userId: userId,
-    userPicture: filePath,
-  });
+  return axios.put(
+    `https://mern-socket-socialnetwork.herokuapp.com/api/users/${userId}`,
+    {
+      userId: userId,
+      userPicture: filePath,
+    }
+  );
 };
 
 export const getUserPicture = (fileName) => {
-  return axios.get(`http://localhost:8080/uploads/${fileName}`);
+  return axios.get(
+    `https://mern-socket-socialnetwork.herokuapp.com/uploads/${fileName}`
+  );
 };
 
 export const subscribeOnFriend = (userId, toUserId) => {
-  return axios.put(`http://localhost:8080/api/users/${toUserId}/follow`, {
-    userId,
-  });
+  return axios.put(
+    `https://mern-socket-socialnetwork.herokuapp.com/api/users/${toUserId}/follow`,
+    {
+      userId,
+    }
+  );
 };
 
 export const unsubscribeFromFriend = (userId, toUserId) => {
-  return axios.put(`http://localhost:8080/api/users/${toUserId}/unfollow`, {
-    userId,
-  });
+  return axios.put(
+    `https://mern-socket-socialnetwork.herokuapp.com/api/users/${toUserId}/unfollow`,
+    {
+      userId,
+    }
+  );
 };
 
 export const addFriend = (userId, toUserId) => {
-  return axios.put(`http://localhost:8080/api/users/${toUserId}/addfriend`, {
-    userId,
-  });
+  return axios.put(
+    `https://mern-socket-socialnetwork.herokuapp.com/api/users/${toUserId}/addfriend`,
+    {
+      userId,
+    }
+  );
 };
 export const deleteFriend = (userId, toUserId) => {
-  return axios.put(`http://localhost:8080/api/users/${toUserId}/deletefriend`, {
-    userId,
-  });
+  return axios.put(
+    `https://mern-socket-socialnetwork.herokuapp.com/api/users/${toUserId}/deletefriend`,
+    {
+      userId,
+    }
+  );
 };
 
 export function getSearchResults(letter) {
-  return axios.get(`http://localhost:8080/api/users/search?userName=${letter}`);
+  return axios.get(
+    `https://mern-socket-socialnetwork.herokuapp.com/api/users/search?userName=${letter}`
+  );
 }

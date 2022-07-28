@@ -71,13 +71,13 @@ const Registration = React.memo((props) => {
                     value={values.username}
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    placeholder="Enter your login"
+                    placeholder="Required your login"
                     name={"username"}
                   />
                 ) : (
                   <TextField
                     color="secondary"
-                    label="Required"
+                    label="Enter your login"
                     variant="outlined"
                     value={values.username}
                     onChange={handleChange}
@@ -91,7 +91,7 @@ const Registration = React.memo((props) => {
                     type="email"
                     error
                     label={errors.email}
-                    placeholder="Enter your email"
+                    placeholder="Required your email"
                     name={"email"}
                     value={values.email}
                     onChange={handleChange}
@@ -101,7 +101,7 @@ const Registration = React.memo((props) => {
                   <TextField
                     type="email"
                     color="secondary"
-                    label="Required"
+                    label="Enter your email"
                     variant="outlined"
                     placeholder="Enter your email"
                     name={"email"}
@@ -115,7 +115,7 @@ const Registration = React.memo((props) => {
                     type="password"
                     error
                     label={errors.password}
-                    placeholder="Enter your password"
+                    placeholder="Required your password"
                     name={"password"}
                     value={values.password}
                     onChange={handleChange}
@@ -125,7 +125,7 @@ const Registration = React.memo((props) => {
                   <TextField
                     type="password"
                     color="secondary"
-                    label="Required"
+                    label="Enter your password"
                     variant="outlined"
                     placeholder="Enter your password"
                     name={"password"}
@@ -139,7 +139,7 @@ const Registration = React.memo((props) => {
                     error
                     label={errors.password2}
                     type="password"
-                    placeholder="Copy your password"
+                    placeholder="Required to copy your password"
                     name={"password2"}
                     value={values.password2}
                     onChange={handleChange}
@@ -148,7 +148,7 @@ const Registration = React.memo((props) => {
                 ) : (
                   <TextField
                     color="secondary"
-                    label="Required"
+                    label="Copy your password"
                     variant="outlined"
                     type="password"
                     placeholder="Copy your password"
